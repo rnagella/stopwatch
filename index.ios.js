@@ -1,6 +1,6 @@
 // import some code we need
-var React = require('react-native');
-var formatTime = require('minutes-seconds-milliseconds');
+let React = require('react-native');
+let formatTime = require('minutes-seconds-milliseconds');
 // destructuring
 var {
   Text,
@@ -79,8 +79,6 @@ var StopWatch = React.createClass({
       this.setState({running: false});
       return;
     }
-
-    var startTime = new Date();
     
     this.setState({
       startTime: new Date()
@@ -95,7 +93,7 @@ var StopWatch = React.createClass({
     }, 30);
   },
   handleLapPress: function() {
-    var lap = this.state.timeElapsed;
+    let lap = this.state.timeElapsed;
 
     this.setState({
       startTime: new Date(),
