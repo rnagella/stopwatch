@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "minutes-seconds-milliseconds": "^1.0.3",
-    "react-native": "^0.13.2"
+    "react-native": "^0.20.0"
   }
 }
